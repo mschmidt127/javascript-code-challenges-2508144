@@ -1,6 +1,7 @@
 function redistributeWealth(wealth) {
-  // Write your code here
-
+  var sum = wealth.reduce((prev, curr) => prev + curr)
+  var avg = wealth.length ? sum / wealth.length : 0
+  return Array(wealth.length).fill(avg)
 }
 
 
